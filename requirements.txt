@@ -1,7 +1,7 @@
 # ── LangChain core ────────────────────────────────────────────────
 langchain>=0.3.0
 langchain-core>=0.3.0
-langchain-community>=0.3.0
+langchain-community>=0.3.0,<0.4
 langchain-text-splitters>=0.3.0
 
 # ── LLM Providers (cài tất cả để hỗ trợ đa provider) ─────────────
@@ -20,6 +20,7 @@ faiss-cpu>=1.7.0
 ragas>=0.4.0
 datasets>=2.0.0                  # required by RAGAS internally
 numpy>=1.25.0
+Pillow>=10.0.0                 # render verified evidence images
 
 # ── Guardrails AI ─────────────────────────────────────────────────
 guardrails-ai>=0.5.0
