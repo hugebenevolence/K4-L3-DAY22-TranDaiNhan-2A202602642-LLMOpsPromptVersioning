@@ -83,7 +83,7 @@ class PIIDetector(Validator):
                 found_pii.append((pii_type, match))
 
         if found_pii:
-            print(f"  ⚠️  Đã redact {len(found_pii)} PII: {[p[0] for p in found_pii]}")
+            print(f"  Redacted {len(found_pii)} PII: {[p[0] for p in found_pii]}")
             return FailResult(error_message="Phát hiện PII", fix_value=redacted_text)
 
         return PassResult()
@@ -147,7 +147,7 @@ class JSONFormatter(Validator):
         try:
             repaired_text = self._repair(value)
             parsed        = json.loads(repaired_text)
-            print(f"  🔧 JSON đã được sửa thành công")
+            print("  JSON repaired successfully")
             return FailResult(error_message="JSON lỗi, đã tự sửa", fix_value=json.dumps(parsed, indent=2, ensure_ascii=False))
         except json.JSONDecodeError:
             # Không sửa được → trả về JSON dự phòng để output vẫn là JSON hợp lệ

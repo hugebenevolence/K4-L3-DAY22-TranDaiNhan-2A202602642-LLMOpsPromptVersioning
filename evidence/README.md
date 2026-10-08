@@ -2,7 +2,7 @@
 
 LangSmith project: [day22-lab](https://smith.langchain.com/o/c184d0e3-d29d-4c6c-832d-c1ca4b2ce5bd/projects/p/f4ac32ab-1725-4707-82f6-3af9ea710422). The LangSmith API confirmed 50 successful root `rag-query` traces and 50 successful root `ab-rag-query` traces. A sample `rag-query` trace contains the input question, retriever output, prompt, model run, and answer. Prompt Hub contains `tran-dai-nhan-rag-prompt-v1` and `tran-dai-nhan-rag-prompt-v2`; both were pulled successfully for A/B routing. The 409 messages in the routing log mean the prompt content was already on Hub, so there was no new commit to create.
 
-The three PNG files are transparent visual reports made from the actual LangSmith API responses and `data/ragas_report.json`. They are **not screenshots of the LangSmith website or a terminal**. The browser session available during this run was not signed in, so the required UI screenshots should replace `01_langsmith_traces.png` and `02_prompt_hub.png` before grading if UI captures are mandatory. The original score JSON and console logs remain unedited evidence of the executions.
+`03_ragas_scores.png` is a real terminal capture displaying the values from `data/ragas_report.json`, which was saved by the completed evaluation run. `01_langsmith_traces.png` and `02_prompt_hub.png` are currently visual reports made from actual LangSmith API responses, **not screenshots of the LangSmith website**. They should be replaced with UI captures before grading if the course requires screenshots. The original score JSON and console logs remain unedited evidence of the executions.
 
 | Metric | V1 | V2 |
 |---|---:|---:|
