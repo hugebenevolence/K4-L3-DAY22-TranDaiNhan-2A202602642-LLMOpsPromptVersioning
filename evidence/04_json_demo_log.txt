@@ -1,4 +1,3 @@
-
 =======================================================
   Demo: JSON Formatting & Repair
 =======================================================
@@ -6,7 +5,7 @@
 [Valid JSON] ✅ Pass
   Input:  {"name": "Alice", "age": 30}
   Output: {"name": "Alice", "age": 30}
-  🔧 JSON đã được sửa thành công
+  JSON repaired successfully
 
 [Markdown fences] ✅ Pass
   Input:  ```json
@@ -15,7 +14,7 @@
   Output: {
   "name": "Bob"
 }
-  🔧 JSON đã được sửa thành công
+  JSON repaired successfully
 
 [Single quotes] ✅ Pass
   Input:  {'name': 'Charlie', 'score': 95}
@@ -23,7 +22,7 @@
   "name": "Charlie",
   "score": 95
 }
-  🔧 JSON đã được sửa thành công
+  JSON repaired successfully
 
 [Trailing comma] ✅ Pass
   Input:  {"key": "value",}
