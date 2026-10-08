@@ -8,6 +8,10 @@
 > | [SUBMISSION.md](SUBMISSION.md) | Tên repo, cấu trúc nộp bài, nơi nộp, deadline |
 > | [RULES.md](RULES.md) | Quy định sử dụng AI, sao chép, nộp muộn, bảo mật API key |
 
+## Kết quả bài làm — Tran Dai Nhan
+
+Đã hoàn thành bốn checkpoint: 50 `rag-query` traces và 50 `ab-rag-query` traces trên [LangSmith project](https://smith.langchain.com/o/c184d0e3-d29d-4c6c-832d-c1ca4b2ce5bd/projects/p/f4ac32ab-1725-4707-82f6-3af9ea710422), hai prompt riêng trên Hub, RAGAS cho 50 câu hỏi ở mỗi phiên bản, và demo Guardrails PII/JSON. Faithfulness của V1/V2 là **0.9570 / 0.9162**. Xem [evidence và phân tích kết quả](evidence/README.md); ảnh LangSmith hiện là báo cáo từ API, được ghi rõ trong tài liệu evidence.
+
 # Chào mừng các bạn đến với Day 22: LangSmith + Prompt Versioning
 
 ## Tổng quan
